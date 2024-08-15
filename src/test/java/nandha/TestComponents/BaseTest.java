@@ -59,7 +59,7 @@ public class BaseTest {
 //			driver = new ChromeDriver();
 //
 //		}
-		if (browserName.contains("Chrome")) {
+		if (browserName.contains("chrome")||browserName.equalsIgnoreCase("Chrome")) {
 			
 			ChromeOptions options = new ChromeOptions();
 			if(browserName.contains("headless")) {
