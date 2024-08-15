@@ -59,17 +59,17 @@ public class BaseTest {
 //			driver = new ChromeDriver();
 //
 //		}
-		if (browserName.contains("chrome")||browserName.equalsIgnoreCase("Chrome")) {
-			
+		if (browserName.contains("chrome") || browserName.equalsIgnoreCase("Chrome")) {
+
 			ChromeOptions options = new ChromeOptions();
-			if(browserName.contains("headless")) {
+			if (browserName.contains("headless")) {
 				options.addArguments("headless");
 			}
 
 			driver = new ChromeDriver(options);
-			
+
 //			in headless mode to open browser in full screen mode use the set size
-			driver.manage().window().setSize(new Dimension(1400,900));
+			driver.manage().window().setSize(new Dimension(1400, 900));
 
 		}
 
